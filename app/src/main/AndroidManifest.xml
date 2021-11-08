@@ -12,7 +12,17 @@
 
         <activity
 
+            android:name=".Thongtinshipper"
+            android:exported="false" />
+        <activity
+            android:name=".Taotaikhoan"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+
+
             android:name=".Giaodien_Donhangmoi"
+
             android:exported="true">
 
             android:name=".ActivityChiTietHoaDon"
