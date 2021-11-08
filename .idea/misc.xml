@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
 
+        <entry key="app/src/main/res/drawable/card_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/drawable/search_box_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/layout/activity_list_order.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_order_item.xml" value="0.33152173913043476" />
+
+
         <entry key="..\:/Users/NC/Desktop/project/UngDungGiaoHang/app/src/main/res/layout/activity_taotaikhoan.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/NC/Desktop/project/UngDungGiaoHang/app/src/main/res/layout/activity_thongtinshipper.xml" value="0.20520833333333333" />
       </map>
@@ -24,6 +30,7 @@
      <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/button_pickup.xml" value="0.22763157894736843" />
         <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/ic_baseline_unarchive.xml" value="0.2703125" />
         <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.264" />
+
 
       </map>
     </option>

@@ -18,6 +18,11 @@
             android:name=".Taotaikhoan"
             android:exported="false" />
         <activity
+
+            android:name=".ListOrder"
+            android:exported="true">
+
+
             android:name=".MainActivity"
 
 
@@ -28,6 +33,7 @@
             android:name=".ActivityChiTietHoaDon"
             android:exported="true" >
 
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,7 +42,12 @@
         </activity>
         <activity
             android:name=".MainActivity"
+
+            android:exported="true">
+
+
             android:exported="false">
+
         </activity>
     </application>
 
