@@ -4,6 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
 
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_regiser.xml" value="0.1796875" />
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/drawable/my_button_bg.xml" value="0.1" />
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/layout/activity_main2.xml" value="0.16666666666666666" />
+
+
         <entry key="app/src/main/res/drawable/card_container.xml" value="0.36875" />
         <entry key="app/src/main/res/drawable/search_box_container.xml" value="0.36875" />
         <entry key="app/src/main/res/layout/activity_list_order.xml" value="0.33" />
@@ -30,6 +38,7 @@
      <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/button_pickup.xml" value="0.22763157894736843" />
         <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/ic_baseline_unarchive.xml" value="0.2703125" />
         <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.264" />
+
 
 
       </map>
