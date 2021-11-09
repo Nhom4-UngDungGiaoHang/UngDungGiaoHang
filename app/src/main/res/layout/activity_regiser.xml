@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Regiser">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="422dp"
+        android:layout_height="182dp"
+        android:background="#358EBC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="4dp"
+        android:background="#358EBC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ngaysinh"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="212dp"
+        android:fontFamily="sans-serif-medium"
+        android:hint="Ngày Sinh"
+
+        android:textColor="#020202"
+        android:background="#E6E6FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_sdt"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="304dp"
+        android:background="#E6E6FA"
+
+        android:hint="Số Điện Thoại"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ten"
+
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="388dp"
+        android:background="#E6E6FA"
+
+        android:hint="Tên"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_taotk"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:text="Tạo Tài Khoản Shipper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ho"
+        android:layout_width="240dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="484dp"
+        android:background="#E6E6FA"
+
+        android:hint="Họ Và Tên Đệm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_dangkytk"
+        android:layout_width="185dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#0355c4"
+        android:layout_marginBottom="64dp"
+
+        android:text="Tạo Tài Khoản"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

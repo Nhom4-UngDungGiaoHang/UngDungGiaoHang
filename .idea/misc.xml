@@ -3,17 +3,41 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.264" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_giaodien_donhangmoi.xml" value="0.23278985507246377" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_list_order.xml" value="0.23278985507246377" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_taotaikhoan.xml" value="0.23278985507246377" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_thongtinshipper.xml" value="0.23278985507246377" />
-        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/fragment_order_item.xml" value="0.23278985507246377" />
+
+        <entry key="app/src/main/res/drawable/card_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/drawable/search_box_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/layout/activity_list_order.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_order_item.xml" value="0.33152173913043476" />
+
+
+        <entry key="..\:/Users/NC/Desktop/project/UngDungGiaoHang/app/src/main/res/layout/activity_taotaikhoan.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/NC/Desktop/project/UngDungGiaoHang/app/src/main/res/layout/activity_thongtinshipper.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+
+
+        <entry key="..\:/Desktop/UngDungGiaoHang/app/src/main/res/layout/activity_giaodien_donhangmoi.xml" value="0.4" />
+        <entry key="..\:/Desktop/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.13020833333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+
+
+        <entry key="..\:/LTTBDDNC/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.176" />
+     <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/button_pickup.xml" value="0.22763157894736843" />
+        <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/drawable/ic_baseline_unarchive.xml" value="0.2703125" />
+        <entry key="..\:/Nam 4 - 2021-2022/5. Lap trinh thiet bi di dong nang cao/Nhom 4/UngDungGiaoHang/app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.264" />
+
+
       </map>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+
+
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
