@@ -19,4 +19,9 @@ public class Login extends AppCompatActivity {
         Intent intent= new Intent(Login.this, Regiser.class);
         startActivity(intent);
     }
+    public void onClickBtnDonHang(View v)
+    {
+        Intent intent= new Intent(Login.this, ListOrder.class);
+        startActivity(intent);
+    }
 }

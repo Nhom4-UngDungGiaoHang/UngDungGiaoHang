@@ -38,6 +38,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/logingg" />
+        app:srcCompat="@drawable/logingg"
+        tools:ignore="OnClick"
+        android:onClick="onClickBtnDonHang"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

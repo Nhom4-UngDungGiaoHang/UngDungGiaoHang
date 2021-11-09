@@ -41,7 +41,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/taodonhang" />
+        android:onClick="onClickBtnTao"
+        app:srcCompat="@drawable/taodonhang"
+        tools:ignore="OnClick" />
 
 
     <ImageView
@@ -49,6 +51,8 @@
         android:layout_width="123dp"
         android:layout_height="149dp"
         android:layout_marginBottom="196dp"
+        android:onClick="onClickBtnGiao"
+        tools:ignore="OnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.875"
