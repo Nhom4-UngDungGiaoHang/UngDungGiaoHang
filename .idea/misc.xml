@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.1640625" />
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_giaodien_donhangmoi.xml" value="0.1640625" />
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/New folder/project/UngDungGiaoHang/app/src/main/res/layout/activity_list_order.xml" value="0.16666666666666666" />
@@ -16,6 +17,14 @@
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/drawable/my_button_bg.xml" value="0.1" />
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/meobi/OneDrive/Máy tính/project/UngDungGiaoHang/app/src/main/res/layout/activity_main2.xml" value="0.16666666666666666" />
+
+        <entry key="app/src/main/res/drawable/card_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/drawable/search_box_container.xml" value="0.36875" />
+        <entry key="app/src/main/res/layout/activity_chi_tiet_hoa_don.xml" value="0.1953125" />
+        <entry key="app/src/main/res/layout/activity_list_order.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_order_item.xml" value="0.33152173913043476" />
+
       </map>
     </option>
   </component>

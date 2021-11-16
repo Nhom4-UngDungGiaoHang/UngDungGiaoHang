@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class ListOrder extends AppCompatActivity {
+public class ListOrder extends AppCompatActivity implements OrderItemAdepter.OnActionOrderItem{
     private RecyclerView rcvListOrder;
     private List<Order> orderList;
     GoogleSignInClient mGoogleSignInClient;
@@ -49,7 +50,7 @@ public class ListOrder extends AppCompatActivity {
 
         generateListOrder();
 
-        OrderItemAdepter orderItemAdepter = new OrderItemAdepter(orderList, this);
+        OrderItemAdepter orderItemAdepter = new OrderItemAdepter(orderList, this, this);
 
         rcvListOrder.setAdapter(orderItemAdepter);
         SpacingItemDecorator spacingItemDecorator = new SpacingItemDecorator(40);
@@ -79,5 +80,11 @@ public class ListOrder extends AppCompatActivity {
                         finish();
                     }
                 });
+    }
+
+    @Override
+    public void onClickItem(int position) {
+        Intent intent = new Intent(ListOrder.this, ActivityChiTietHoaDon.class);
+        ListOrder.this.startActivity(intent);
     }
 }
