@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +19,7 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -32,6 +34,25 @@ public class ListOrder extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_order);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setSelectedItemId(R.id.menu_order);
+        bottomNav.setOnNavigationItemSelectedListener(
+                item -> {
+                    switch (item.getItemId()){
+                        case R.id.menu_order:
+
+                            break;
+                        case R.id.menu_map:
+                            startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+                            overridePendingTransition(0,0);
+                            break;
+                        case R.id.menu_imformation:
+                            startActivity(new Intent(getApplicationContext(), Thongtinshipper.class));
+                            overridePendingTransition(0,0);
+                            break;
+                    }
+                    return false;
+                });
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
