@@ -2,6 +2,7 @@ package com.example.ungdunggiaohang;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -11,6 +12,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.ungdunggiaohang.databinding.ActivityMapsBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -21,6 +23,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding = ActivityMapsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -28,6 +31,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setSelectedItemId(R.id.menu_map);
+        bottomNav.setOnNavigationItemSelectedListener(
+                item -> {
+                    switch (item.getItemId()){
+                        case R.id.menu_order:
+                            startActivity(new Intent(getApplicationContext(), ListOrder.class));
+                            overridePendingTransition(0,0);
+                            break;
+                        case R.id.menu_map:
+
+                            break;
+                        case R.id.menu_imformation:
+                            startActivity(new Intent(getApplicationContext(), Thongtinshipper.class));
+                            overridePendingTransition(0,0);
+                            break;
+                    }
+                    return false;
+                });
     }
 
     /**
