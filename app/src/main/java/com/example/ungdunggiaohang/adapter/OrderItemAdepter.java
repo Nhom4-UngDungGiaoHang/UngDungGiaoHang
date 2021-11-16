@@ -23,10 +23,12 @@ import java.util.List;
 public class OrderItemAdepter extends RecyclerView.Adapter<OrderItemAdepter.ViewHolder> {
     private List<Order> orderList;
     private Context context;
+    private OnActionOrderItem onActionOrderItem;
 
-    public OrderItemAdepter(List<Order> orderList, Context context) {
+    public OrderItemAdepter(List<Order> orderList, Context context, OnActionOrderItem onActionOrderItem) {
         this.orderList = orderList;
         this.context = context;
+        this.onActionOrderItem = onActionOrderItem;
     }
 
     @NonNull
@@ -34,7 +36,7 @@ public class OrderItemAdepter extends RecyclerView.Adapter<OrderItemAdepter.View
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(this.context);
         View orderView = inflater.inflate(R.layout.fragment_order_item, parent, false);
-        ViewHolder viewHolder = new ViewHolder(orderView);
+        ViewHolder viewHolder = new ViewHolder(orderView, this.onActionOrderItem);
         return viewHolder;
     }
 
@@ -56,16 +58,19 @@ public class OrderItemAdepter extends RecyclerView.Adapter<OrderItemAdepter.View
         return this.orderList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView txtID;
         private TextView txtCost;
         private TextView txtNamePackage;
         private TextView txtDateSeen;
         private TextView txtFrom;
         private TextView txtTo;
+        private OnActionOrderItem onActionOrderItem;
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView, OnActionOrderItem onActionOrderItem) {
             super(itemView);
+
+            this.onActionOrderItem = onActionOrderItem;
 
             txtID = itemView.findViewById(R.id.txtID);
             txtCost = itemView.findViewById(R.id.txtCost);
@@ -73,6 +78,16 @@ public class OrderItemAdepter extends RecyclerView.Adapter<OrderItemAdepter.View
             txtDateSeen = itemView.findViewById(R.id.txtDateSeen);
             txtFrom = itemView.findViewById(R.id.txtFrom);
             txtTo = itemView.findViewById(R.id.txtTo);
+
+            itemView.setOnClickListener(this);        }
+
+        @Override
+        public void onClick(View view) {
+            this.onActionOrderItem.onClickItem(getAdapterPosition());
         }
+    }
+
+    public interface  OnActionOrderItem {
+        void onClickItem(int position);
     }
 }
