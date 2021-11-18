@@ -1,5 +1,7 @@
 package com.example.ungdunggiaohang;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.google.android.gms.auth.api.credentials.IdToken;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -26,6 +29,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         // Configure sign-in to request the user's ID, email address, and basic
 // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//                .requestIdToken(getString(R.string.server_client_id))
                 .requestEmail()
                 .build();
         // Build a GoogleSignInClient with the options specified by gso.
@@ -79,9 +83,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener{
         }
     }
     private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
+
         try {
             GoogleSignInAccount account = completedTask.getResult(ApiException.class);
             GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
+//            String idToken = account.getIdToken();
+//            Log.w(TAG, "handleSignInResult: "+ idToken);
             if (acct != null) {
                 String personName = acct.getDisplayName();
                 String personGivenName = acct.getGivenName();
