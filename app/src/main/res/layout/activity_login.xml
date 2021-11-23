@@ -7,6 +7,17 @@
     android:background="#358EBC"
     tools:context=".Login">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btn_dangnhap"
+        app:layout_constraintEnd_toEndOf="@+id/btn_dangnhap"
+        app:layout_constraintStart_toStartOf="@+id/btn_dangnhap" />
+
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="400dp"
@@ -52,7 +63,7 @@
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Password"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
@@ -87,8 +98,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btn_dangnhap"
