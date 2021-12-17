@@ -8,5 +8,7 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorRed">#C11515</color>
     <string name="server_client_id">843847305172-glmavlpodrr0dd1ab996nu47n2omf0f6.apps.googleusercontent.com</string>
-    <string name="server_url">http://192.168.31.116:3110/api</string>
+<!--    <string name="server_url">http://192.168.31.116:3110/api</string>-->
+    <string name="server_url">https://ungdunggiaohang.herokuapp.com/api</string>
+
 </resources>

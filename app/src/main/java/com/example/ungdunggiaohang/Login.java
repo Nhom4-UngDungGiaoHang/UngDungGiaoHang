@@ -50,6 +50,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
 
         URL = getString(R.string.server_url);
+//        URL ="https://ungdunggiaohang.herokuapp.com/?fbclid=IwAR3e7qhBPksHDcdQcBMGQPLnsK417-R8wNHo3eQK2uu2c8Rllt2QrsZ_6XQ";
         progressBar = findViewById(R.id.progressBar);
         username = findViewById(R.id.inputEmail);
         password = findViewById(R.id.inputPassword);
